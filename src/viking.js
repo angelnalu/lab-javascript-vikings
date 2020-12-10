@@ -82,10 +82,8 @@ class War {
  }
 }
 
- const randomElement = (array) => {
+  const randomElement = (array) => {
   const index = Math.floor(Math.random() * array.length)
-  const arr = array[index]
-  const final = []
-  final.push(arr, index)
-  return final;
+  return [array[index]];
+
 }
